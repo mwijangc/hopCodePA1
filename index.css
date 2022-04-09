@@ -4,38 +4,45 @@
     font-family: 'Nanum Gothic Coding', monospace;
     box-sizing: border-box;
 }
+body{
+    margin : 0;
+}
+
 
 div{
     display:block;
 }
 
 .navbar{
-    display: flex;
-    
-    color: red;
-
+    display: flex;  
     background: #1a1b26;
     color:white;
     font-size: 1rem;
     font-weight:bold;
+    overflow:hidden;
+    padding: 7px 8px;
+   
+    /* justify-content: space-evenly; */
 }
 
-a.navbarLogo{
-    padding: 10px 10px;
-    
-}
-
-/* Style navbar's ul's only not all uls */
-ul.navbar{   
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-}
-
-li.navbar{
+.navbar a{
     float:left;
+    display:block;
+    text-align: center;
+    padding-right: 12px;
+}
+
+.navbar .icon{
+    display:none;
+}
+a.navLink{
+    padding: 10px 10px;
+    color:white;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 li a{
@@ -45,15 +52,7 @@ li a{
     padding: 10px 10px;
 }
 
-a:visited.navbar{
-    /* color:white;
-     */
 
-}
-
-a{
-    text-decoration: none;
-}
 
 .hero-header{
     flex-direction:row;
@@ -101,4 +100,76 @@ a{
     flex: 0.33;
     /* should probably do diff math to center lol */
     padding-left: calc(75px + 0.5vw);
+}
+
+.products-bar{
+    
+    text-align:center;
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_round */
+.button{
+    border:none;
+    background:#1a1b26;
+    color:white;
+    padding: 20px;
+    text-align : center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover{
+    background-color:white;
+    color:#1a1b26;
+}
+
+.product-btn{
+    border-radius : 10px;
+    font-size: 1rem;
+    
+}
+
+.product-card{
+    display:flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        display:block;
+        
+    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+
+    .team-block{
+        display:flex;
+        flex-direction:column;
+        
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+.navbar.responsive {position: relative;
+display:block;
+}
+.navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px 8px;
+}
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
 }
