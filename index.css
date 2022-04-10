@@ -99,7 +99,7 @@ li a{
 .profile-card{
     flex: 0.33;
     /* should probably do diff math to center lol */
-    padding-left: calc(75px + 0.5vw);
+    padding-left: calc(75px + 0.75vw);
 }
 
 .products-bar{
@@ -110,20 +110,35 @@ li a{
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_round */
 .button{
     border:none;
-    background:#1a1b26;
+    /* background:#1a1b26; */
+    background-image: linear-gradient(to right, #1a1b26, #434d57, #23455a, #3b335a);
+    background-size: 300% 100%;
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
     color:white;
     padding: 20px;
+    width: 200px;
     text-align : center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block;W
     cursor: pointer;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    /* transition-duration: 2s; */
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
+/* https://codepen.io/JavaScriptJunkie/pen/pPRooV */
+
 .button:hover{
-    background-color:white;
-    color:#1a1b26;
+    background-position: 100% 0;
+
+    moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 .product-btn{
