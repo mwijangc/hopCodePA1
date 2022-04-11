@@ -152,6 +152,19 @@ li a{
     flex-direction: column;
 }
 
+.product-img-block{
+    text-align: center;
+}
+
+/* centers the table items along page 
+   makes overflow create its own little scrollbar...?*/
+.product-table{
+    display:grid;
+
+    overflow-x: auto;
+
+}
+
 
 @media screen and (max-width: 600px) {
     .navbar{
@@ -169,6 +182,8 @@ li a{
         flex-direction:column;
         
     }
+
+    
   }
 
 
@@ -187,4 +202,53 @@ display:block;
     display: block;
     text-align: left;
 }
+}
+
+.product-image img{   
+    
+    max-width:200px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    
+}
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
+/* chrome/safari use webkit */
+
+
+::-webkit-scrollbar{    
+
+    width:0.5em;
+    height:0.5em;
+    overflow:auto;
+
+}
+
+
+::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    background: #1a1b2648;
+    
+    margin-block: 10em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background: #1a1b2648;
+    
+    margin-block: 10em;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1a1b2648;
+}
+
+
+@supports (scrollbar-color: #1a1b2648){
+ *{
+     scrollbar-color:#1a1b2648;
+     scrollbar-width: thin;
+ }   
 }
