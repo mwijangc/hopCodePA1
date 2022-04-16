@@ -156,6 +156,7 @@ li a{
     text-align: center;
 }
 
+
 /* centers the table items along page 
    makes overflow create its own little scrollbar...?*/
 .product-table{
@@ -240,10 +241,17 @@ display:block;
     width: auto;
     height: auto;
     
+    
+    transition: transform 1s;
+    
+    /* margin: 0 auto; */
 }
 
-
-
+.product-image:hover{
+   
+    transform: scale(2);
+    
+}
 /* https://www.youtube.com/watch?v=lvKK2fs6h4I */
 /* chrome/safari use webkit */
 
