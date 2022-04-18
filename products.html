@@ -44,19 +44,25 @@
 
 
         <div class="product-table">
+            
+            <div class="product-title">
+                <h1>Frogs for Sale </h1> 
+            
+            </div>
+         
+            
             <table>
                 <!-- might not need for table? -->
-                <tr>
+                
 
-                    <h1>Frogs for Sale </h1> 
-                </tr>
+               
                 <!-- 5 items -->
                 <tr>
                     <td>
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/woodFrog.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/woodFrog.jpg" ></img>                        
                                 </span>
@@ -81,7 +87,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/gbpoison.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/gbpoison.jpg" ></img>                        
                                 </span>
@@ -105,7 +111,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/firebelly.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/firebelly.jpg" ></img>                        
                                 </span>
@@ -128,7 +134,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/budgettFrog.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/budgettFrog.jpg" ></img>                        
                                 </span>
@@ -151,7 +157,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/kaloula.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/kaloula.jpg" ></img>                        
                                 </span>
@@ -177,7 +183,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/mantella.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/mantella.jpg" ></img>                        
                                 </span>
@@ -200,7 +206,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/southHorned.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/southHorned.jpg" ></img>                        
                                 </span>
@@ -222,7 +228,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/tomatoFrog.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/tomatoFrog.jpg" ></img>                        
                                 </span>
@@ -244,7 +250,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/treeFrog.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/treeFrog.jpg" ></img>                        
                                 </span>
@@ -266,7 +272,7 @@
                         <div class="zoom">
                         <!-- should actually link to product page -->
                         <a href="product-info/trueToad.html">
-                            <div class="product-card">
+                            <div class="product-card resp-product-card">
                                 <span class="product-img-block">
                                 <img width="150" height="150" class="product-image" src="images/trueToad.jpg" ></img>                        
                                 </span>
@@ -292,7 +298,20 @@
        
     </div>
 
-
+    <script>
+        // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+        function hamburger() {
+            var bar = document.getElementById("navBar");
+            if (bar.className === "navbar") 
+            {
+                bar.className += " responsive";
+            } 
+            else 
+            {
+                bar.className = "navbar";
+            }
+            }
+    </script>
     
 
   </body>

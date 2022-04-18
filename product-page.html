@@ -88,5 +88,19 @@
             </form>
         </div>
     </div>
+    <script>
+      // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+      function hamburger() {
+          var bar = document.getElementById("navBar");
+          if (bar.className === "navbar") 
+          {
+              bar.className += " responsive";
+          } 
+          else 
+          {
+              bar.className = "navbar";
+          }
+          }
+  </script>
   </body>
 </html>
