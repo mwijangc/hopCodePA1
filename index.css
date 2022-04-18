@@ -1,8 +1,17 @@
 /* https://fonts.google.com/specimen/BIZ+UDGothic?query=goth#standard-styles */
 /* https://fonts.google.com/specimen/Nanum+Gothic+Coding?query=goth#standard-styles */
+:root{
+    --black: #2C3335;
+    --white:#FFFEF3;
+    --carribean-green:#3D7E4B;
+    --green:#5AC971;
+}
+
+
 *{
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
+    
 }
 body{
     margin : 0;
@@ -13,11 +22,15 @@ div{
     display:block;
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif; 
+}
+
 
 .navbar{
     display: flex;  
-    background: #1a1b26;
-    color:white;
+    background: var(--black);
+    color:var(--white);
     font-size: 1rem;
     font-weight:bold;
     overflow:hidden;
@@ -38,7 +51,7 @@ div{
 }
 a.navLink{
     padding: 10px 10px;
-    color:white;
+    /* color:white; */
 }
 
 a, a:hover, a:focus, a:active {
@@ -65,9 +78,9 @@ li a{
     padding-top: calc(100px + 6vh);
     padding-bottom: 12vh;
     align-items:flex-end;
-    background: #1a1b26;
+    background: var(--black);
 
-    color:white;
+    color:var(--white);
 }
  
 .hero-fancy-side{
@@ -85,10 +98,12 @@ li a{
     position:relative;
     overflow:hidden; 
     margin-right: 5vw;
+    
 }
 
 .team-intro{
     text-align: center;
+    
     font-size: 1.25rem;
     font-weight:700;
 }
@@ -112,7 +127,7 @@ li a{
 .button{
     border:none;
     /* background:#1a1b26; */
-    background-image: linear-gradient(to right, #1a1b26, #434d57, #23455a, #3b335a);
+    background-image: linear-gradient(to right, var(--black), #434d57, #23455a, var(--carribean-green));
     background-size: 300% 100%;
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
     color:white;
@@ -148,20 +163,25 @@ li a{
     
 }
 
+.submit-btn{
+    border-radius : 10px;
+    font-size: 1rem;
+    width:100%;
+}
 .product-card{
     display:flex;
     flex-direction: column;
+    /* background-color: var(--white); */
 }
 
 .product-img-block{
     text-align: center;
+    
 }
 
 .zoom {
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0);
+    padding: 50px;    
     transition: transform .2s; /* Animation */
-
     margin: 0 auto;
   }
   
@@ -174,22 +194,15 @@ li a{
    makes overflow create its own little scrollbar...?*/
 .product-table{
     display:grid;
-
     overflow-x: auto;
 
 }
 /*for individual product Page lemme know if you want in different css -bock*/
-p.description{
-    width: 50%;
-    height: 50%;
-    writing-mode: horizontal-tb;
-    background-color: green;
-    block-size: 20%;
-}
+
 
 .checked {
-    color: rgb(240, 141, 12);
-  }
+    color:var(--green)
+}
 /* From uiverse.io */
 button {
     padding: 1.3em 3em;
@@ -208,7 +221,7 @@ button {
    }
    
    button:hover {
-    background-color: #2e99e5;
+    background-color: var(--carribean-green);
     box-shadow: 0px 15px 20px rgba(46, 147, 229, 0.4);
     color: #fff;
     transform: translateY(-7px);
@@ -260,6 +273,50 @@ I need to make another css file or just throw it in here) */
 .purchase-form label { 
     margin-top: 32px;
 }
+
+
+
+::-webkit-scrollbar{    
+
+    width:0.5em;
+    height:0.5em;
+    overflow:auto;
+
+}
+
+
+::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    background: #1a1b2648;
+    
+    margin-block: 10em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background: #1a1b2648;
+    
+    margin-block: 10em;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1a1b2648;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
+/* chrome/safari use webkit */
+
+
+
+.rating span{
+    color: var(--carribean-green);
+}
+
 
 
 @media screen and (max-width: 600px) {
@@ -316,41 +373,6 @@ display:block;
    
     transform: scale(2);
     
-}
-/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
-/* chrome/safari use webkit */
-
-
-::-webkit-scrollbar{    
-
-    width:0.5em;
-    height:0.5em;
-    overflow:auto;
-
-}
-
-
-::-webkit-scrollbar-track{
-    border-radius: 100vw;
-    background: #1a1b2648;
-    
-    margin-block: 10em;
-}
-
-::-webkit-scrollbar-thumb{
-    border-radius: 100vw;
-    background: #1a1b2648;
-    
-    margin-block: 10em;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: #1a1b2648;
-}
-
-.rating span{
-    color: var(--carribean-green);
 }
 
 

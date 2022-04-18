@@ -7,58 +7,63 @@
     <title>Products</title>
     <link rel="stylesheet" href="index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Nanum+Gothic+Coding:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
+      <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
       <nav class="navbar" id="navBar">
-        <a class="navlink navbarLogo" href="/"> put logo svg here lol </a>
+        <a class ="navlink navbarLogo" href="/">
+            <img height = "25px" width="25px" src="images/fwog_logo.svg"> </a>
         <!-- nav is a list rn for potentially hamburger menu? for responsiveness  -->
-
-        <a class="navlink" href="index.html"> Home </a>
-
-        <a class="navlink" href="index.html"> page2Pog </a>
-
-        <a
-          href="javascript:void(0);"
-          class="navlink icon"
-          onclick="hamburger()"
-        >
-          <i class="fa fa-bars"></i>
+       
+      
+        <a class="navlink" href="index.html">    
+            Home
         </a>
-      </nav>
+    
+        <a class="navlink" href="products.html">    
+            Frogs
+        </a>
+    
+        <a href="javascript:void(0);" class="navlink icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+                
+       
+
+    </nav>    
     </header>
     <div class="product-page-main-body">
         <div class="purchase-form">
             <form action='mailto:fakeshop@yougotpwned.com' method="post" enctype="text/plain">
                 <!-- TODO: Product ID -->
                 <label for="productID">Product ID</label><br>
-                <input type="text" id="productID" name="productID"><br>
+                <input type="text" id="productID" name="productID " required><br>
     
                 <!-- TODO: Quantity -->
                 <label for="quantity">Quantity</label><br>
-                <input type="number" id="quantity" name="quantity"><br>
+                <input type="number" id="quantity" name="quantity" required><br>
     
                 <!-- TODO: First name -->
                 <label for="firstName">First name</label><br>
-                <input type="text" id="firstName" name="firstName"><br>
+                <input type="text" id="firstName" name="firstName" required><br>
     
                 <!-- TODO: Last name -->
                 <label for="lastName">Last name</label><br>
-                <input type="text" id="lastName" name="lastName"><br>
+                <input type="text" id="lastName" name="lastName" required><br>
     
                 <!-- TODO: Phone number -->
                 <label for="phoneNumber">Phone Number</label><br>
-                <input type="number" id="lastName" name="lastName"><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required><br>
     
                 <!-- TODO: Shipping address -->
                 <label for="shipingAddress">Shipping Address</label><br>
-                <input type="text" id="lastName" name="lastName"><br>
+                <input type="text" id="lastName" name="lastName" required><br>
     
                 <!-- TODO: Shipping method (overnight, 2-day expedited, 6-day groudned) -->
                 <label for="deliveryMethod">Delivery method</label><br>
@@ -73,8 +78,12 @@
                 <!-- TODO: Credit card number -->
                 <label for="creditCard">Credit card number</label><br>
                 <input type="number" id="creditCard" name="creditCard"><br>
-    
-                <input type="submit" value="Submit">
+                
+                
+                <button type="submit" value="Submit" class="button submit-btn" >                                
+                  Submit
+                </button>
+                
                 
             </form>
         </div>
