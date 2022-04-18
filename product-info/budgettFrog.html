@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Budgett Frog</title>
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+	<header> 
+
+        <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <nav class="navbar" id="navBar">
+            <a class ="navlink navbarLogo" href="/"> put logo svg here lol </a>
+            <!-- nav is a list rn for potentially hamburger menu? for responsiveness  -->
+           
+          
+            <a class="navlink" href="../index.html">    
+                Home
+            </a>
+        
+            <a class="navlink" href="../index.html">    
+                page2Pog
+            </a>
+        
+            <a href="javascript:void(0);" class="navlink icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+                    
+           
+
+        </nav>    
+    </header>
+
+    <div class="main-body">
+   
+        <div class="float-container">
+   
+            <!-- probably make product-card-HERO or something thats bigger and more detailed. -->
+            <div class="float-child">
+                <img width="400" height="400" class="product-image" src="../images/budgettFrog.jpg" ></img>                        
+                </span>
+            </div>
+    
+            <div class="float-child">
+                <h1>Budgett Frog</h1>
+                <h2>$500.00</h2>
+                <h3>Ratings</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Frog Description</h3>
+                <p >Lepidobatrachus laevis, widely known as Budgett's frog, is a species of frog in the family Ceratophryidae,
+                     discovered by John Samuel Budgett. It is often kept as a pet. It has acquired a number of 
+                    popular nicknames, including hippo frog, Freddy Krueger frog, and escuerzo de agua. </p>
+                <h3>Attributes/Specifications</h3>
+                <p >Species: L. laevis
+                    Size: four to five inches
+                    Genus: Lepidobatrachus
+                    Order: Anura
+                    Family: Ceratophryidae
+                    Phylum: Chordata</p>
+                <h3>Additional Details</h3>
+                <p >Lepidobatrachus laevis, widely known as Budgett's frog, is a species of frog in the family Ceratophryidae,
+                    discovered by John Samuel Budgett. It is often kept as a pet. It has acquired a number of 
+                   popular nicknames, including hippo frog, Freddy Krueger frog, and escuerzo de agua.</p>
+                <a href="../product-page.html"><button>Fill out Purchase Form</button></a>
+    
+    
+            </div>
+    
+            </div>
+
+    </div>        
+    <script>
+        // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+        function hamburger() {
+            var bar = document.getElementById("navBar");
+            if (bar.className === "navbar") 
+            {
+                bar.className += " responsive";
+            } 
+            else 
+            {
+                bar.className = "navbar";
+            }
+            }
+    </script>
+
+    
+
+  </body>
+</html>
