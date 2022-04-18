@@ -406,10 +406,13 @@ I need to make another css file or just throw it in here) */
 
     /* for responsive table */
     td {
-        display: table-row;
-
+        display: table-row;        
 
         
+      }
+
+      .product-card{
+          width:75vw;
       }
       
     .profile-card{
@@ -420,33 +423,7 @@ I need to make another css file or just throw it in here) */
         
         /* padding-left: calc(75px + 0.75vw); */
         padding-bottom:  10px;
-    }
-    .product-title{
-    
-        /* box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);         */
-        /* position:center; */
-        float:left;
-        /* display: block; */
-        text-decoration: none;    
-        font-size:1.5em;
-        
-        
-        border: 1px solid var(--carribean-green);    
-        background-color: var(--carribean-green);
-        box-sizing: border-box;        
-        
-        
-        border-radius: 100px;
-        /* position: relative; */
-        /* transition: none; */
-        
-        width:25%;
-        /* margin:auto; */
-        /* text-align: center; */
-        color: var(--white);
-        
-    
-  }
+    } 
 
 
 
